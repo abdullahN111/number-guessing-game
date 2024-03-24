@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import inquirer from "inquirer";
 
    type ansType = {
@@ -5,6 +7,7 @@ import inquirer from "inquirer";
    }
 
 const generatedNo = Math.floor(Math.random() * 10);
+console.log("Welcome to number guessing game");
 
 const answers: ansType = await inquirer.prompt([{
 
